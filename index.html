@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Currículum</title>
+    <link rel="stylesheet" href="estilo.css">
+
+</head>
+<body>
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                
+                <a href="#">CHIARA</a>
+            </div>
+            <nav id="nav" >
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href= "#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#currículum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+
+
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+           
+        </header>
+
+    </div>
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+
+            <div class="contenedor-img">
+                <img src="C:\Users\chiar\Downloads\perfil.jpg" alt="">
+                
+            </div>
+            <h1>CHIARA LEONARDI</h1>
+            <h2>Estudiante Ingeniería en Sistemas</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i>></a>
+                
+            </div>
+        </div>
+    </section>
+    
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola,soy Chiara Leonardi</span> Soy estudiante de ingeniería en Sistemas, también estoy aprendiendo distintos lenguajes de programación. Soy una persona responsable, con mucha capacidad para aprender y confiable.
+                     Tengo buen trato con las personas y estoy dispuesta a trabajar en equipo. </p>
+            <div class="fila">
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Edad</strong>
+                            20 Años
+                        </li>
+                        <li>
+                            <strong>Fecha De Nacimiento</strong>
+                            29/10/2002
+                        </li>
+                        <li>
+                            <strong>Telefono</strong>
+                            +54 9 341 250-4549
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            chiaraleonardi890@gmail.com
+                        </li>
+                        <li>
+                            <strong>Web</strong>
+                            www.example.com
+                        </li>
+                        <li>
+                            <strong>Direccion</strong>
+                            balcarce 300,Rosario, Argentina
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            Estudiante
+                        </li>
+
+
+                    </ul>
+
+                </div>
+                
+                            
+                        
+                    </div>
+
+                </div>
+            </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>SKILLS</h2>
+            <div class="fila">
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso ">
+                                <span>75%</span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso ">
+                                <span>89%</span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso ">
+                                <span>60%</span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!--Technical skill-->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>100%</span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>100%</span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+    
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>CURRÍCULUM</h2>
+            <div class="fila">
+                <div class="col-izquierda">
+                    <h3>Educación</h3>
+                    <div class="item">
+                        <h4>Arte y Multimedia</h4>
+                        <span class="casa">Universidad Tecnológica Nacional</span>
+                        <span class="fecha">2021-actualidad</span>
+                        <br>
+                        <span class="escuela">Instituto De la Sagrada Familia</span>
+                        <span class="fecha1">2009-2020</span>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit rerum molestiae praesentium, praesentium sapiente ducimus 
+                        sequi!</p>
+                        <div class="conectori"></div>
+                        <div class="circuloi"></div>
+                    </div>
+                    
+                </div>
+                <div class="col-derec">
+                    <h3>Experiencia de trabajo </h3>
+                    <div class="item">
+                        <h4>Rechia Casa De Pastas-Encargada</h4>
+                        <span class="casa">Cobro en caja con tarjeta de crédito y débito</span>
+                        <br>
+                        <span class="fecha">Atención al público</span>
+                        <br>
+                        <span class="escuela">Ayudante en rubro pastas</span>
+                        <br>
+                        <span class="fecha1">Reparto a Domicilio</span>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit rerum molestiae praesentium, praesentium sapiente ducimus 
+                        sequi!</p>
+                        <div class="conectori"></div>
+                        <div class="circuloi"></div>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de Correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                    
+                </div>
+                <div class="col">
+                    <img src="C:\Users\chiar\OneDrive\Imágenes\Captura de pantalla (3).png" alt="Imagen de la dirección sacada de google maps">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Balcarce 300, Rosario Arg
+
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen-button"></i>
+                                Llamada: +54 9 341 250 4549
+
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email:chiaraleonardi@gmail.com
+
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+
+        </a>
+
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i>></a>
+        </div>
+
+
+    </footer>
+    <script src="script.js"> </script>
+    
+    
+</body>
+</html>

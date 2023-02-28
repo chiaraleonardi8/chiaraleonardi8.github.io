@@ -1,0 +1,557 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Playfair Display';
+    margin: 0;
+    padding: 0;
+}
+html{
+    /*para deslizar cuando hago clic en el link del menú*/
+    scroll-behavior: smooth;
+
+}
+
+/*menu*/
+.contenedor-header{
+    background: pink;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.contenedor-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px; 
+}
+
+.contenedor-header header .logo a{
+    float: left;
+    font-family: 'Righteous';
+    font-size: 36px;
+    color: grey;
+    text-decoration: none;
+    font-weight: bold;
+}
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;
+    
+}
+.contenedor-header header nav ul li a{
+    text-align: none;
+    color: beige;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+.contenedor-header header nav ul li a:hover{
+    color:violet;
+}
+.nav-responsive{
+    background-color: pink;
+    color: beige;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+
+}
+
+/* seccion inicio */
+.inicio{
+    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
+    url(https://www.universidades.com.ar/img/article/10-mejores-universidades-argentina-estudiar-ingenieria-en-sistemas);
+    background-size: cover;
+    height: 100vh;
+    color: beige;
+    display: flex;
+    align-items: center;
+
+}
+
+.inicio .contenido-banner{
+    padding: 20px;
+    background-color: black;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+
+.inicio .contenido-banner img{
+    margin-top: 40px;
+    border: 10px solid black;
+    display: block;
+    width: 80%;
+    margin: auto;
+    border-radius: 100%;
+
+}
+
+.inicio .contenido-banner h1{
+    margin-top: 40px;
+    font-size: 42px;
+    font-family: 'Righteous';
+}
+
+.inicio .contenido-banner h2{
+    font-size: 15px;
+    font-weight: normal;
+}
+.inicio .contenido-banner .redes a{
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 100%;
+    width: 42 px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .5s;
+}
+
+
+.inicio .contenido-banner .redes a:hover{
+    background-color: violet;
+}
+
+.sobremi{
+    background-color: pink;
+    color: black;
+    padding: 50px 20px;
+}
+
+.sobremi.contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.sobremi h2{
+    font-size: 48px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+.sobremi .contenido-seccion p{
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+.sobremi .contenido-seccion p span{
+    color: grey;
+    font-weight: bold;
+}
+
+.sobremi .fila{
+    display: flex;
+}
+
+.sobremi .fila .col{
+    width: 50%;
+}
+.sobremi .fila .col h3{
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+.sobremi.fila .col ul{
+    list-style: none;
+}
+.sobremi .fila .col ul li{
+    margin: 12px 0;
+}
+.sobremi .fila .col ul li strong{
+display: inline-block;
+color: grey;
+width: 130px;
+
+}
+.sobremi .fila .col ul li span{
+    background-color: grey;
+    padding: 3px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.sobremi .fila .col .contenedor-intereses{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sobremi button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid black;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: grey;
+    position: relative;
+    z-index: 10;
+}
+
+.sobremi button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: black;
+    z-index: -1;
+    transition: 1s;
+}
+.sobremi button:hover .overlay{
+    width: 100% ;
+}
+.skills{
+    background-color: pink;
+    color: black;
+    padding: 50px 20px;
+}
+
+.skills .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.skills h2{
+    font-size: 48px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    padding: 20px 0;
+}
+.skills .fila{
+    display: flex;
+}
+.skills .fila .col{
+    width: 50%;
+    padding: 0 20px;
+}
+.skills .fila .col h3{
+    font-size: 28px;
+    font-family:'Courier New', Courier, monospace;
+    margin-bottom: 25px;
+}
+.skills .skill  span{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+.skills .skill .barra-skill{
+    height: 8px;
+    width: 80%;
+    background-color: black;
+    position:relative;
+    margin-bottom: 30px;
+}
+.skills .skill .progreso{
+    background-color: beige;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+
+}
+.skills .skill .barra-skill span{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: lightyellow;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    top: -17px;
+    right: -15px;
+    font-size: 14px;
+}
+.skills .skill .javascript{
+    width: 0%;
+    animation: 2s javascript forwards;
+
+}
+
+@keyframes javascript{
+    0%{width:0%;}
+    100%{width: 75%;}
+}
+
+.skills .skill .htmlcss{
+    width: 0%;
+    animation: 2s htmlcss forwards;
+}
+
+@keyframes htmlcss{
+    0%{width: 0%;}
+    100%{width: 89%;}
+}
+.skills .skill .Python{
+    width: 0%;
+    animation: 2s Python forwards;
+}
+
+@keyframes Python{
+    0%{width: 0%;}
+    100%{width: 60%;}
+}
+.skills .skill .Comunicación{
+    width: 0%;
+    animation: 2s Comunicación forwards;
+}
+
+@keyframes Comunicación{
+    0%{width: 0%;}
+    100%{width: 75%;}
+}
+.skills .skill .TrabajoenEquipo{
+    width: 0%;
+    animation: 2s TrabajoenEquipo forwards;
+}
+
+@keyframes TrabajoenEquipo{
+    0%{width: 0%;}
+    100%{width: 100%;}
+}
+.skills .skill .Creatividad{
+    width: 0%;
+    animation: 2s Creatividad forwards;
+}
+
+@keyframes Creatividad{
+    0%{width: 0%;}
+    100%{width: 90%;}
+}
+.skills .skill .Dedicación{
+    width: 0%;
+    animation: 2s Dedicación forwards;
+}
+
+@keyframes Dedicación{
+    0%{width: 0%;}
+    100%{width: 100%;}
+}
+.curriculum{
+    background-color: pink;
+    color: black;
+    padding: 50px 20px;
+}
+
+.curriculum .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.curriculum h2{
+    font-size: 48px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    padding: 20px 0;
+}
+.curriculum .fila{
+    display: flex;
+}
+
+.curriculum .fila .col {
+    width: 49%;
+    padding: 0 20px;
+}
+
+.curriculum .fila .col h3{
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+.curriculum .fila .col-izquierda{
+    border-right: 2px solid black;
+}
+.curriculum .fila  .col-derec{
+    border-left: 2px solid black;
+}
+.curriculum .fila .item{
+    padding: 25px;
+    margin-bottom: 30px;
+    background-color: solid grey;
+    position: relative;
+}
+.curriculum .fila .item h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+.contacto{
+    background-image: url(C:\Users\chiar\OneDrive\Imágenes\Capturadepantalla3.png);
+    background-color: beige;
+    color: black;
+    padding: 50px 0;
+
+}
+
+.contacto .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+
+}
+
+.contacto h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.contacto .fila{
+    display: flex;
+}
+
+.contacto .col{
+    width: 50%;
+    padding: 10px;
+    position: relative;
+}
+.contacto .col input, .contacto .col textarea{
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+
+}
+
+.contacto button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid black;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: grey;
+    position: relative;
+    z-index: 10;
+
+}
+
+.contacto button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: pink;
+    z-index: -1;
+    transition: 1s;
+}
+
+.contacto button:hover .overlay{
+    width: 100%;
+
+}
+
+.contacto .col img{
+    width: 100%;
+}
+.contacto .col .info{
+    position: absolute;
+    top: 40%;
+    background-color: beige;
+    padding: 20px;
+    width: fit-content;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+footer{
+    background-color: pink;
+    color:white ;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+footer .redes{
+    margin-bottom: 20px;
+
+}
+footer .redes a{
+    color: grey;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 100%;
+    width: 42 px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .5s;
+}
+footer .arriba{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+
+}
+
+@media screen and (max-width:980px){
+    nav{
+        display: none;
+
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: blue;
+        width: 180px;
+
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+
+    nav.responsive ul li{
+        border-bottom: 1px solid white;
+        padding: 10px 0;
+    }
+
+}
+
+
+
+
+
+
+
+  
+
+
+
+
+
